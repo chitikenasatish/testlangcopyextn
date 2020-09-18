@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
+    <filter root="/apps/testlangcopyextn" />
     <filter root="/var/workflow/models/wcm-translation">
         <include pattern="/var/workflow/models/wcm-translation/create_language_copy"/>
         <include pattern="/var/workflow/models/wcm-translation/update_language_copy"/>
     </filter>
-    <filter root="/conf/global/settings/workflow" />
+    <filter root="/conf/global/settings/workflow/models/wcm-translation" />
 </workspaceFilter>

@@ -8,7 +8,7 @@
     title="WCM: Create Language Copy">
     <metaData
         cq:generatingPage="/conf/global/settings/workflow/models/wcm-translation/create_language_copy/jcr:content"
-        cq:lastModified="{Long}1558555224385"
+        cq:lastModified="{Long}1600454074170"
         cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
         tags="wcm"/>
@@ -35,24 +35,15 @@
             type="PROCESS">
             <metaData
                 jcr:primaryType="nt:unstructured"
-                PROCESS="org.stjude.wcm.shared.workflow.StjudeSlingAliasUpdateProcess"
+                PROCESS="langcopyextn.core.workflow.StjudeSlingAliasUpdateProcess"
                 PROCESS_AUTO_ADVANCE="true"/>
         </node2>
         <node3
             jcr:primaryType="cq:WorkflowNode"
-            title="Stjude Asset Reference update"
-            type="PROCESS">
-            <metaData
-                jcr:primaryType="nt:unstructured"
-                PROCESS="org.stjude.wcm.shared.workflow.StjudeUpdateReferenceProcess"
-                PROCESS_AUTO_ADVANCE="true"/>
-        </node3>
-        <node4
-            jcr:primaryType="cq:WorkflowNode"
             title="End"
             type="END">
             <metaData jcr:primaryType="nt:unstructured"/>
-        </node4>
+        </node3>
     </nodes>
     <transitions jcr:primaryType="nt:unstructured">
         <node0_x0023_node1
@@ -72,15 +63,8 @@
         <node2_x0023_node3
             jcr:primaryType="cq:WorkflowTransition"
             from="node2"
-            rule=""
             to="node3">
             <metaData jcr:primaryType="nt:unstructured"/>
         </node2_x0023_node3>
-        <node3_x0023_node4
-            jcr:primaryType="cq:WorkflowTransition"
-            from="node3"
-            to="node4">
-            <metaData jcr:primaryType="nt:unstructured"/>
-        </node3_x0023_node4>
     </transitions>
 </jcr:root>

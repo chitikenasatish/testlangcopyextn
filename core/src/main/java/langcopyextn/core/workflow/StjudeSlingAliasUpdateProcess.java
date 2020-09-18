@@ -74,7 +74,7 @@ public class StjudeSlingAliasUpdateProcess extends AbstractLangCopyProcess imple
                 if (!childRes.getPath().startsWith(CONTENT_WEB_SITES_REFERENCE_BASE)) {
                     ModifiableValueMap vm = childRes.adaptTo(ModifiableValueMap.class);
                     vm.put(SLING_ALIAS, resource.getName());
-                    vm.put("jcr:title","SDL"+vm.get("jcr:title"));
+                    vm.put("jcr:title","SDL-- "+vm.get("jcr:title"));
                 }
             } else if (deep == true) {
                 setDeepChildPageSlingAlias(childRes, targetLang, deep);

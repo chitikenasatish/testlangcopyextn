@@ -49,12 +49,13 @@
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <configuration>
                     <group>langcopyextn</group>
-                    <name>testlangcopyextn.ui.apps</name>
-                    <packageType>application</packageType>
-                    <accessControlHandling>merge</accessControlHandling>
-
-                    <dependencies>
-                    </dependencies>
+                    <embeddeds>
+                        <embedded>
+                            <groupId>langcopyextn</groupId>
+                            <artifactId>testlangcopyextn.core</artifactId>>
+                            <target>/apps/testlangcopyextn/install</target>
+                        </embedded>
+                    </embeddeds>
                 </configuration>
             </plugin>
             <plugin>
@@ -105,10 +106,6 @@
 
 
 
-        <dependency>
-            <groupId>com.adobe.aem</groupId>
-            <artifactId>aem-sdk-api</artifactId>
-        </dependency>
 
         <!-- HTL dependencies needed for the HTL Maven Plugin source code generation -->
         <dependency>

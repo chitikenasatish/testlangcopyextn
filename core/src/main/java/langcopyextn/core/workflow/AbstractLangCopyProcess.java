@@ -28,7 +28,7 @@ public abstract class AbstractLangCopyProcess {
     public static final String UPDATE_LANG_COPY_WORKFLOW
             = "/var/workflow/models/wcm-translation/update_language_copy";
 
-    public static final String SOURCE_EN_LANG = "/en-us/";
+    public static final String SOURCE_EN_LANG = "/en/";
     public static final String SOURCE_ELL_LANG = "/en_us/";
 
     public static final String FORWARD_SLASH = "/";

@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:designPath="/libs/settings/wcm/designs/default"
-        cq:lastModified="{Date}2019-05-22T14:57:59.087-05:00"
+        cq:lastModified="{Date}2020-09-18T13:35:57.310-05:00"
         cq:lastModifiedBy="admin"
         cq:tags="[workflow:wcm]"
         cq:template="/libs/cq/workflow/templates/model"
@@ -46,29 +46,16 @@
             <process_2132962261
                 jcr:created="{Date}2019-05-22T14:56:34.893-05:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2019-05-22T14:57:23.004-05:00"
+                jcr:lastModified="{Date}2020-09-18T13:35:57.306-05:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Stjude SlingAlias Process"
                 sling:resourceType="cq/workflow/components/model/process">
                 <metaData
                     jcr:primaryType="nt:unstructured"
-                    PROCESS="org.stjude.wcm.shared.workflow.StjudeSlingAliasUpdateProcess"
+                    PROCESS="langcopyextn.core.workflow.StjudeSlingAliasUpdateProcess"
                     PROCESS_AUTO_ADVANCE="true"/>
             </process_2132962261>
-            <process_2125929040
-                jcr:created="{Date}2019-05-22T14:57:29.884-05:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2019-05-22T14:57:54.272-05:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                jcr:title="Stjude Video Reference update Process"
-                sling:resourceType="cq/workflow/components/model/process">
-                <metaData
-                    jcr:primaryType="nt:unstructured"
-                    PROCESS="org.stjude.wcm.shared.workflow.StjudeUpdateReferenceProcess"
-                    PROCESS_AUTO_ADVANCE="true"/>
-            </process_2125929040>
         </flow>
         <image
             jcr:lastModified="{Date}2014-02-18T10:25:18.335+02:00"
